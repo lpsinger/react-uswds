@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon } from '../../Icon/Icons'
+import * as Icon from '../../Icon/Icons'
 import { Button } from '../../Button/Button'
 
 interface ModalCloseButtonProps {

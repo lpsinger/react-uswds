@@ -7,7 +7,7 @@ import { BannerContent } from '../BannerContent/BannerContent'
 import { BannerGuidance } from '../BannerGuidance/BannerGuidance'
 import { BannerIcon } from '../BannerIcon/BannerIcon'
 import { MediaBlockBody } from '../../mediablock/MediaBlockBody/MediaBlockBody'
-import { Icon } from '../../Icon/Icons'
+import * as Icon from '../../Icon/Icons'
 
 // assets
 import flagImg from '@uswds/uswds/src/img/us_flag_small.png'

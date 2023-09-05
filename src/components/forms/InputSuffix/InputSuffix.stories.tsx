@@ -3,7 +3,7 @@ import { InputSuffix } from './InputSuffix'
 import { InputGroup } from '../InputGroup/InputGroup'
 import { FormGroup } from '../FormGroup/FormGroup'
 import { TextInput } from '../TextInput/TextInput'
-import { Icon } from '../../Icon/Icons'
+import * as Icon from '../../Icon/Icons'
 
 export default {
   title: 'Components/Input prefix or suffix/InputSuffix',

@@ -1,7 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
 // assets
-import { Icon } from '../../Icon/Icons'
+import * as Icon from '../../Icon/Icons'
 
 export const NavCloseButton = ({
   onClick,
