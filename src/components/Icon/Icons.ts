@@ -89,6 +89,8 @@ import FlightSvg from '@uswds/uswds/src/img/usa-icons/flight.svg?svgr'
 import FloodingSvg from '@uswds/uswds/src/img/usa-icons/flooding.svg?svgr'
 import FolderSvg from '@uswds/uswds/src/img/usa-icons/folder.svg?svgr'
 import FolderOpenSvg from '@uswds/uswds/src/img/usa-icons/folder_open.svg?svgr'
+import FormatBoldSvg from '@uswds/uswds/src/img/material-icons/format_bold.svg?svgr'
+import FormatItalicSvg from '@uswds/uswds/src/img/material-icons/format_italic.svg?svgr'
 import FormatQuoteSvg from '@uswds/uswds/src/img/usa-icons/format_quote.svg?svgr'
 import FormatSizeSvg from '@uswds/uswds/src/img/usa-icons/format_size.svg?svgr'
 import ForumSvg from '@uswds/uswds/src/img/usa-icons/forum.svg?svgr'
@@ -502,6 +504,12 @@ export class Icon {
 
   public static FolderOpen: React.ComponentType<IconProps> =
     makeUSWDSIcon(FolderOpenSvg)
+
+  public static FormatBold: React.ComponentType<IconProps> =
+    makeUSWDSIcon(FormatBoldSvg)
+
+  public static FormatItalic: React.ComponentType<IconProps> =
+    makeUSWDSIcon(FormatItalicSvg)
 
   public static FormatQuote: React.ComponentType<IconProps> =
     makeUSWDSIcon(FormatQuoteSvg)

@@ -393,6 +393,14 @@ export const folderOpen = (args: StorybookArgs): React.ReactElement => (
   <Icon.FolderOpen {...args} />
 )
 
+export const formatBold = (args: StorybookArgs): React.ReactElement => (
+  <Icon.FormatBold {...args} />
+)
+
+export const formatItalic = (args: StorybookArgs): React.ReactElement => (
+  <Icon.FormatItalic {...args} />
+)
+
 export const formatQuote = (args: StorybookArgs): React.ReactElement => (
   <Icon.FormatQuote {...args} />
 )

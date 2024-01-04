@@ -122,6 +122,8 @@ export const allIcons = (args: StorybookArgs): React.ReactElement => (
     <Icon.Flooding {...args} />
     <Icon.Folder {...args} />
     <Icon.FolderOpen {...args} />
+    <Icon.FormatBold {...args} />
+    <Icon.FormatItalic {...args} />
     <Icon.FormatQuote {...args} />
     <Icon.FormatSize {...args} />
     <Icon.Forum {...args} />
