@@ -8,6 +8,7 @@ import React, {
   useState,
 } from 'react'
 import classnames from 'classnames'
+import { useResizeObserver } from 'usehooks-ts'
 
 import { isElementInViewport, calculateMarginOffset } from './utils'
 
@@ -114,6 +115,9 @@ export function Tooltip<
   const positions = [positionTop, positionBottom, positionRight, positionLeft]
   const MAX_ATTEMPTS = positions.length
 
+  const { width: tooltipBodyWidth, height: tooltipBodyHeight } =
+    useResizeObserver({ ref: tooltipBodyRef })
+
   useEffect(() => {
     // When position/styles change, check if in viewport
     if (isVisible && triggerElementRef.current && tooltipBodyRef.current) {
@@ -147,7 +151,18 @@ export function Tooltip<
         }
       }
     }
-  }, [effectivePosition, positionStyles, wrapTooltip])
+  }, [
+    effectivePosition,
+    positionStyles,
+    wrapTooltip,
+    tooltipBodyWidth,
+    tooltipBodyHeight,
+  ])
+
+  useEffect(() => {
+    setWrapTooltip(false)
+    setPositionAttempts(0)
+  }, [tooltipBodyWidth, tooltipBodyHeight])
 
   useEffect(() => {
     if (!isVisible) {
